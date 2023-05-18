@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1684414199 source:d:\2023 hawar\cg\biydaalt\main.cpp
+1684421391 source:d:\2023 hawar\cg\biydaalt\main.cpp
 	<GL/glut.h>
 	<math.h>
 	<stdio.h>
@@ -896,4 +896,15 @@
 	<stdio.h>
 
 1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\_mingw_print_pop.h
+
+1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\stdint.h
+	<crtdefs.h>
+	<stddef.h>
+
+1526093414 c:\program files\codeblocks\mingw\x86_64-w64-mingw32\include\inttypes.h
+	<crtdefs.h>
+	<stdint.h>
+	<stddef.h>
+	<_mingw_print_push.h>
+	<_mingw_print_pop.h>
 

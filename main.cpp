@@ -59,18 +59,14 @@ void drawRobot()
     
 
     // Draw head (a simple cube)
+    
+    glTranslatef(camX, -0.5f, camZ-3.0f);
     glColor3f(1.0, 1.0, 1.0); // White
     glTranslatef(0.0, 0.6, 0.0);
     glutSolidCube(0.4);
 
-    glLoadIdentity();
-    glTranslatef(camX, -0.5f, camZ-3.0f);
-
-    glLoadIdentity();
-    glTranslatef(0.0f, -0.5f, -3.0f);
-
     // Draw body (a simple cube)
-    glColor3f(1.0, 0.0, 0.0); // Red
+    glColor3f(0.0, 0.0, 1.0); // Red
     glutSolidCube(0.7);
 
     // Draw head (a simple cube)
@@ -135,13 +131,19 @@ void drawRobot()
 
     glPopMatrix();
     angle += 0.05; // Increase angle to provide the illusion of movement
+
+     glLoadIdentity();
+    glTranslatef(camX, -0.5f, camZ-3.0f);
+
+    glLoadIdentity();
+    glTranslatef(0.0f, -0.5f, -3.0f);
 }
 
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // Change the view according to the position of the 'camera'
-    gluLookAt(camX, 0.0, camZ,
+    gluLookAt(0, 0.0, 7,
               0.0, 0.0, 0.0,
               0.0, 1.0, 0.0);
 
